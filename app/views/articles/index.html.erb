@@ -1,0 +1,5 @@
+<h1>View all articles</h1>
+<p><% @articles.each do |article| %></p>
+<div><%= link_to("#{article.title}", article_path(article)) %></div>
+<% end %>
+<p><%= link_to("Add a post", new_article_path) %></p>
